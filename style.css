@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: #6C63FF;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+    color: #6C63FF;
+}
+
+.hero-section {
+    padding: 160px;
+    text-align: center;
+    background-color: #6C63FF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 60%;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-section button {
+    background-color: #fff;
+    color: #6C63FF;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    color: #fff;
+}
+
+.image-content {
+    max-width: 40%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 32px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #333;
+}
+
+.what-i-do {
+    padding: 100px;
+    text-align: center;
+    font-size: 30px; 
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.proficiency {
+    padding: 100px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.skill {
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 7px;
+}
+
+.html-progress {
+    width: 90%;
+    height: 100%;
+    background-color: #6C63FF;
+}
+
+.css-progress {
+    width: 80%;
+    height: 100%;
+    background-color: #6C63FF;
+}
+
+.js-progress {
+    width: 70%;
+    height: 100%;
+    background-color: #6C63FF;
+}
+
+.python-progress {
+    width: 60%;
+    height: 100%;
+    background-color: #6C63FF;
+}
+
+.cpp-progress {
+    width: 50%;
+    height: 100%;
+    background-color: #6C63FF;
+}
+
+.image-section {
+    text-align: center;
+    padding: 120px;
+}
+
+.portfolio-image {
+    max-width: 130%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.05);
+}
+
+.achievements {
+    padding: 120px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.certificates {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.certificates img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.certificates img:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    padding: 120px;
+    text-align: center;
+    background-color: #f4f4f9;
+    font-size: 20px;
+}
+
+.contact form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.contact input {
+    padding: 15px;
+    font-size: 18px;
+    width: 250px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact input:hover {
+    background-color: #e0e0e0;
+}
+
+.contact button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #6C63FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact button:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #6C63FF;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    transition: background-color 0.4s ease;
+}
+
+footer:hover {
+    background-color: #333;
+}
